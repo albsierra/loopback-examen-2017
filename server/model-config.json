@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Candidato": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Candidatura": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Comunidad": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Provincia": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "VotoCandidatura": {
+    "dataSource": "mysqlDs",
+    "public": true
+  }
+}

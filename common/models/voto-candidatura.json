@@ -1,0 +1,29 @@
+{
+  "name": "VotoCandidatura",
+  "plural": "VotosCandidaturas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "votos": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "provincia": {
+      "type": "belongsTo",
+      "model": "Provincia",
+      "foreignKey": ""
+    },
+    "candidatura": {
+      "type": "belongsTo",
+      "model": "Candidatura",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

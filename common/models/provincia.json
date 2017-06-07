@@ -1,0 +1,48 @@
+{
+  "name": "Provincia",
+  "plural": "Provincias",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "poblacion": {
+      "type": "number"
+    },
+    "nMesas": {
+      "type": "number"
+    },
+    "censo": {
+      "type": "number"
+    },
+    "blancos": {
+      "type": "number"
+    },
+    "nulos": {
+      "type": "number"
+    },
+    "validos": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "comunidad": {
+      "type": "belongsTo",
+      "model": "Comunidad",
+      "foreignKey": ""
+    },
+    "votosCandidaturas": {
+      "type": "hasMany",
+      "model": "VotoCandidatura",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

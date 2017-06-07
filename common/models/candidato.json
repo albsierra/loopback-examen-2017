@@ -1,0 +1,43 @@
+{
+  "name": "Candidato",
+  "plural": "Candidatos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ordenCandidato": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido1": {
+      "type": "string",
+      "required": true
+    },
+    "apellido2": {
+      "type": "string"
+    },
+    "sexo": {
+      "type": "string"
+    },
+    "elegido": {
+      "type": "string",
+      "default": "N"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "candidatura": {
+      "type": "belongsTo",
+      "model": "Candidatura",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

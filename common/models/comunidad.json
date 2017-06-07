@@ -1,0 +1,43 @@
+{
+  "name": "Comunidad",
+  "plural": "Comunidades",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "poblacion": {
+      "type": "number"
+    },
+    "nMesas": {
+      "type": "number"
+    },
+    "censo": {
+      "type": "number"
+    },
+    "blancos": {
+      "type": "number"
+    },
+    "nulos": {
+      "type": "number"
+    },
+    "validos": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "provincias": {
+      "type": "hasMany",
+      "model": "Provincia",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
