@@ -4,10 +4,10 @@ module.exports = function(app) {
     app.dataSources.mysqlDs.automigrate(lbTables, function(er) {
       if (er) throw er;
       console.log('Loopback tables [', lbTables, '] created in ', app.dataSources.mysqlDs.adapter.name);
+if (app.models.Votante) {
       app.dataSources.mysqlDs.automigrate('Votante', function(er) {
         if (er) throw er;
         console.log('Loopback table Votante created in ', app.dataSources.mysqlDs.adapter.name);
-
         var Usuario = app.models.Votante;
         var Role = app.models.Role;
         var RoleMapping = app.models.RoleMapping;
@@ -53,6 +53,7 @@ module.exports = function(app) {
           }
         });
       });
+}
     });
   }
 };
