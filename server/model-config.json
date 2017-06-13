@@ -13,6 +13,25 @@
       "./mixins"
     ]
   },
+  "User": {
+    "dataSource": "mysqlDs"
+  },
+  "AccessToken": {
+    "dataSource": "mysqlDs",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mysqlDs",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mysqlDs",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mysqlDs",
+    "public": false
+  },
   "Candidato": {
     "dataSource": "mysqlDs",
     "public": true

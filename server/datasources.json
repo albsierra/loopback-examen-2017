@@ -6,7 +6,7 @@
     "database": "eleccionesEuropeas",
     "password": "alumno",
     "name": "mysqlDs",
-    "user": "root",
+    "user": "alumno",
     "connector": "mysql"
   }
 }
